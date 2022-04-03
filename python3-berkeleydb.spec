@@ -60,6 +60,8 @@ Dokumentacja API modułu Pythona berkeleydb.
 %{__sed} -i -e "s,'build','build-3'," test.py
 
 %build
+export BERKELEYDB_DIR=%{_prefix}
+export BERKELEYDB_LIBDIR=%{_libdir}
 %if %{with agpl}
 export YES_I_HAVE_THE_RIGHT_TO_USE_THIS_BERKELEY_DB_VERSION=1
 %endif
@@ -78,6 +80,8 @@ export YES_I_HAVE_THE_RIGHT_TO_USE_THIS_BERKELEY_DB_VERSION=1
 %install
 rm -rf $RPM_BUILD_ROOT
 
+export BERKELEYDB_DIR=%{_prefix}
+export BERKELEYDB_LIBDIR=%{_libdir}
 %if %{with agpl}
 export YES_I_HAVE_THE_RIGHT_TO_USE_THIS_BERKELEY_DB_VERSION=1
 %endif
