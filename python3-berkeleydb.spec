@@ -8,7 +8,7 @@ Summary:	Python bindings for Oracle Berkeley DB
 Summary(pl.UTF-8):	Wiązania Pythona do Oracle Berkeley DB
 Name:		python3-berkeleydb
 Version:	18.1.5
-Release:	1
+Release:	2
 %if %{with agpl}
 License:	AGPL v3
 %else
@@ -34,6 +34,7 @@ BuildRequires:	sed >= 4.0
 BuildRequires:	sphinx-pdg-3
 %endif
 Requires:	python3-modules >= 1:3.7
+Obsoletes:	python3-bsddb3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
