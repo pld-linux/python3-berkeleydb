@@ -34,7 +34,7 @@ BuildRequires:	sed >= 4.0
 BuildRequires:	sphinx-pdg-3
 %endif
 Requires:	python3-modules >= 1:3.7
-Obsoletes:	python3-bsddb3
+Obsoletes:	python3-bsddb3 < 4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
