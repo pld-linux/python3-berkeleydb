@@ -7,8 +7,8 @@
 Summary:	Python bindings for Oracle Berkeley DB
 Summary(pl.UTF-8):	Wiązania Pythona do Oracle Berkeley DB
 Name:		python3-berkeleydb
-Version:	18.1.5
-Release:	4
+Version:	18.1.14
+Release:	1
 %if %{with agpl}
 License:	AGPL v3
 %else
@@ -17,7 +17,7 @@ License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/berkeleydb/
 Source0:	https://files.pythonhosted.org/packages/source/b/berkeleydb/berkeleydb-%{version}.tar.gz
-# Source0-md5:	d7e0cf782268806d681c6648d2a48d12
+# Source0-md5:	820a9203671d75bb2f739f382893e826
 URL:		https://pypi.org/project/berkeleydb/
 # supported versions: 4.8, 5.3, 6.2, 18.1
 BuildRequires:	db-devel >= 4.8
